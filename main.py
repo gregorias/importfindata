@@ -147,7 +147,6 @@ if __name__ == '__main__':
                     cmdt.get_fullname(), quote[0], quote[1]))
                 p_new = pl.clone(book)
                 p_new = gnucash.GncPrice(instance=p_new)
-                p_new = pl
                 p_new.set_time(quote[1])
                 v = p_new.get_value()
                 v.num = (quote[0] * v.denom).to_integral()
